@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的睡眠时长超越了百分之几的动物？</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🛌 动物睡眠大比拼 🦥</h1>
+        <p>输入你每天的睡眠时间，看看你超越了哪些瞌睡虫！</p>
+
+        <div class="input-group">
+            <label for="sleepHours">你的睡眠时长（小时）：</label>
+            <input type="number" id="sleepHours" step="0.1" min="0" max="24" placeholder="例如： 8">
+            <button onclick="calculate()">开始比拼！</button>
+        </div>
+
+        <div id="result" class="result-hidden">
+            <h2>结果公布！</h2>
+            <p id="resultText"></p>
+            <p id="animalComparison"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
